@@ -1,2 +1,13 @@
 # Safe-Output-Feedback-Control-via-SDRE-and-Barrier-States
-This paper presents a safe output-feedback control framework for partially observable nonlinear control-affine systems, leveraging state-dependent Riccati equations (SDREs) in conjunction with robust barrier states (BaS). The developed approach integrates an SDRE-based observer.
+This paper presents a safe output-feedback control framework for partially observable nonlinear control-affine systems, leveraging state-dependent Riccati equations (SDREs) in conjunction with robust barrier states (BaS). The developed approach integrates an SDRE-based observer. The developed Code is presented in MATLAB by Mathworks Inc, and was created on MATLAB 2021a. THe Same Code was used for Simulations and Experiments for the Paper.
+
+## 1. Code Structure
+
+- SDREBasedControl.m – Baseline SDRE controller without barrier states.
+- SDREBasedWithBarrier.m – Extended controller with barrier functions and robust terms.
+- main.m (driver script) – Sets up system dynamics, obstacle parameters, and runs simulations.
+- data/ folder – Stores simulation results. Subfolders are automatically created
+- - NoBarrier/ -
+  - BarrierOnly/-
+  - BarrierAndRobust/
+Each subfolder contains .dat files with simulation results (state trajectories, estimates, errors, and parameter estimates).
