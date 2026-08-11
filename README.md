@@ -17,3 +17,17 @@ Each subfolder contains .dat files with simulation results (state trajectories, 
 - Obstacle geometry: Adjust obs_center and obs_radius (currently circular obstacles).
 - Controller/observer tuning: Modify Q, R, M, alpha, gamma, K, etc within the Controller
 - Add new scenarios: Extend the cases list in SDREBasedWithBarrier.m.
+
+## Python Simulations
+
+- Python implementation of the **nonlinear output-feedback SDRE controller with Barrier States**.
+- Implements **partial-state measurement feedback**, using position measurements \(y = [x,y]\) to estimate the nonlinear system state.
+- Includes both **Barrier Only** and **Barrier + Robust** simulation cases.
+- Uses a **dynamic Barrier State** for obstacle avoidance.
+- Computes the feedback controller online using the **continuous-time algebraic Riccati equation (CARE)** applied to the augmented state-dependent dynamics.
+- Incorporates a **time-varying estimation-error bound** in the robust Barrier-State formulation.
+- Simulates a nonlinear planar vehicle with states \([x,y,\theta]\) and translational and angular control inputs.
+- Logs **true states, estimated states, estimation errors, time histories, and observer parameters** for each simulation case.
+- Generates plots comparing **true and estimated trajectories** and **state-estimation errors over time**.
+
+## Experimental Implementation using PX4 Mavros, using ROS2 Humble 
