@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    deadzone: 0.25
+    autorepeat_rate: 20.0
+    coalesce_interval_ms: 50

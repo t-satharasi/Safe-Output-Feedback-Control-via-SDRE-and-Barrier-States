@@ -1,0 +1,8 @@
+cd ~/PX4-Autopilot
+export PX4_HOME_LAT=29.6282703
+export PX4_HOME_LON=-82.3606036
+export PX4_HOME_ALT=30.861857569478296
+
+PX4_SYS_AUTOSTART=4001 PX4_SIM_MODEL=gz_x500 PX4_GZ_MODEL_POSE="0.0,0.0,0.0,0.0" ./build/px4_sitl_default/bin/px4 -i 1
+PX4_SYS_AUTOSTART=4001 PX4_SIM_MODEL=gz_x500 PX4_GZ_MODEL_POSE="0.75,2.0,0,0,0,0" ./build/px4_sitl_default/bin/px4 -i 2
+PX4_SYS_AUTOSTART=4001 PX4_SIM_MODEL=gz_x500 PX4_GZ_MODEL_POSE="1.5,4.0,0,0,0,0" ./build/px4_sitl_default/bin/px4 -i 3

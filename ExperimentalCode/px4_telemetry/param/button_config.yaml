@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    arm_button: 7
+    disarm_button: 6
+    follow_setpoint_button: 10
+    takeoff_button: 1
+    control_button: 0

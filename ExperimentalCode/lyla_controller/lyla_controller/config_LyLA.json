@@ -1,0 +1,23 @@
+{
+    "T_final": 240.0,
+    "dt": 0.01,
+    "n_states": 6,
+    "ke": 1.4,
+    "mean": 0.0,
+    "covariance": 1.0,
+    "theta_bar": 10.0,
+    "forgetting_factor": 0.000001,
+    "learning_rate": 0.01,
+    "gamma": 0.010,
+    "kT": 0.001,
+    "n_inputs": 6,
+    "n_outputs": 6,
+    "num_layers": 5,
+    "n_neurons": 5,
+    "diffusion_diagonal_value": 1.0,
+    "INCLUDE_RMS": true,
+	"INCLUDE_PLOTS": true,
+    "HOME_X": 0.0,
+    "HOME_Y": 0.0,
+    "VEL_MAX": 1.8
+}
