@@ -32,8 +32,8 @@ Each subfolder contains .dat files with simulation results (state trajectories, 
 
 ## Experimental Implementation using PX4 Mavros, using ROS2 Humble 
 
-````markdown
-## Running Experiments
+
+
 
 Follow the steps below to run the controller in either **Gazebo simulation** or on the **physical drone**.
 
@@ -47,7 +47,7 @@ Follow the steps below to run the controller in either **Gazebo simulation** or 
 
    ```bash
    aero_common/minimal_startup_air/singleagent_simulation.sh
-````
+    ````
 
 3. **Launch MAVROS**
 
@@ -75,5 +75,5 @@ Follow the steps below to run the controller in either **Gazebo simulation** or 
 Make sure QGroundControl, PX4/Gazebo (when applicable), and MAVROS are running correctly before launching the LyLA controller.
 
 ```
-```
+
 
