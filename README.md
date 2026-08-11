@@ -31,3 +31,49 @@ Each subfolder contains .dat files with simulation results (state trajectories, 
 - Generates plots comparing **true and estimated trajectories** and **state-estimation errors over time**.
 
 ## Experimental Implementation using PX4 Mavros, using ROS2 Humble 
+
+````markdown
+## Running Experiments
+
+Follow the steps below to run the controller in either **Gazebo simulation** or on the **physical drone**.
+
+1. **Launch QGroundControl**
+
+   Start QGroundControl before launching the PX4/MAVROS stack.
+
+2. **Launch Gazebo** *(simulation only)*
+
+   For Gazebo experiments, start the single-agent simulation using:
+
+   ```bash
+   aero_common/minimal_startup_air/singleagent_simulation.sh
+````
+
+3. **Launch MAVROS**
+
+   Launch MAVROS from the `minimal_startup_air` package.
+
+   Select the appropriate launch configuration depending on whether the experiment is being run in:
+
+   * **Gazebo simulation**
+   * **Physical drone**
+
+4. **Launch the LyLA controller**
+
+   For simulation:
+
+   ```bash
+   ros2 launch lyla_controller lyla_sim.launch.py
+   ```
+
+   For experiments on the Astro 1 platform:
+
+   ```bash
+   ros2 launch lyla_controller astro1_lyla.launch.py
+   ```
+
+Make sure QGroundControl, PX4/Gazebo (when applicable), and MAVROS are running correctly before launching the LyLA controller.
+
+```
+```
+
