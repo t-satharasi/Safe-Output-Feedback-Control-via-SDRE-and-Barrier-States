@@ -1,0 +1,5 @@
+# Start mission, agent to offboard mode
+string mission_id
+---
+bool success
+string message

@@ -1,0 +1,5 @@
+# disconnect agent from fleet manager on GCS
+string agent_name
+---
+bool success
+string message

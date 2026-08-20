@@ -1,0 +1,6 @@
+# used to command swarm to takeoff synchronously 
+
+float64 takeoff_altitude	# meters above ground
+---
+bool success
+string message

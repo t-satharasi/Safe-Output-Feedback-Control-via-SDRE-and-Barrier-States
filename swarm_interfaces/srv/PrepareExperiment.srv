@@ -1,0 +1,7 @@
+# prepare misison service request 
+# Asking agent to perform pre-checks
+# Returns mission-ready status
+
+---
+bool ready
+string agent_id

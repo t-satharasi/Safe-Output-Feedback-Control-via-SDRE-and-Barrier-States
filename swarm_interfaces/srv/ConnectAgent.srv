@@ -1,0 +1,6 @@
+# Connect agent to fleet manager on GCS
+float64 battery_level
+string agent_name
+---
+bool success
+string message
